@@ -26,7 +26,6 @@ Este proyecto se realizará haciendo uso de las librerías mencionadas en el arc
 Las principales librerías que usaré son Pandas (ideal para el análisis de los datos), Seaborn y Matplotlib (ideales para la visualización de estos datos y generar gráficos).
 
 #### Carga del dataset
-Cargamos el dataset en nuestro editor de código, en mi caso, Visual Studio Code y lo transformamos en un DataFrame de Pandas para poder trabajar con él. Extraemos información básica, como primeras filas, nombres de las columnas, vemos los valores nulos... para tener una idea general de en qué consiste nuestro dataset.
 
 #### Estructura del dataset
 Este dataset contiene 399342 registros (filas) y 18 columnas. Esto indica que cada fila corresponde a un atleta, que se puede identificar por su id o también por su nombre y apellidos y cada columna a una variable o característica registrada sobre ese atleta.
@@ -51,7 +50,6 @@ Mediante la función "describe" obtenemos información muy valiosa sobre la dist
 Tenemos datos individuales(con elevada granularidad) de tipo **float** e **integer** (métricas numéricas), como pueden ser la edad, el peso, la altura... y algunos otros datos de tipo **object** (variables de texto), como la región, el nombre, etc.
 
 Como vemos en el notebook este dataset no cuenta con una gran cantidad de valores nulos, lo cuál va a facilitar nuestro análisis y va a hacer que los resultados que obtengamos sean consistentes y representen de una buena forma la realidad.
-En especial, las variables que yo considero más importantes no cuentan casi con ningún valor nulo y las variables que cuentan con más valores nulos, las cuáles son "affiliateId" y "affiliateName" considero que en un futuro se podrían eliminar, ya que aportan identificadores poco útiles para nuestro proyecto, porque ya contamos con otros como nombre y apellidos y sobretodo con el "competitorId".
 
 No cuenta con valores duplicados lo que garantiza que cada atleta es único y no existen repeticiones que puedan distorsionar el análisis.
 
@@ -59,7 +57,6 @@ En cuanto a los valores únicos, he revisado que este dataset cuente con valores
 Se comprueba que para la variable género sólo existen "Male" y "Female" y para la variable temporal sólo los años 2021, 2022 y 2023, años en los que está basado este dataset. 
 
 He englobado en una variable los valores atípicos que presenta "overallRank", estos valores indican un puesto en el ranking negativo.
-Solo son 5 atletas los que tienen estos valores, asi que, se podría considerar eliminarlos para que no hubiera errores a la hora de hacer estimaciones con esta variable.
 
 En la fase de exploración se ha obtenido una visión general sobre la estructura, el contenido y la calidad de los datos disponibles. Se han revisado las variables presentes, su tipología y distribución. Además, se ha explorado la presencia de valores nulos y posibles outliers, así como la consistencia y coherencia entre columnas.
 
