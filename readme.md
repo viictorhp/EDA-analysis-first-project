@@ -69,4 +69,11 @@ No he eliminado los valores duplicados, ya que, no existe ninguna fila que sea i
 Por último he exportado mi nuevo dataset limpio y he creado un segundo notebook para pasar con la parte de agrupación y visualización de mi análisis ya partiendo de este nuevo dataset.
 
 ## 3. Agrupación y visualización de los datos
+En esta última fase he realizado varios análisis y demostraciones interesantes. He establecido relaciones entre algunas variables para ver cómo se comportan y he presentado todos los resultados tanto en tablas como en gráficas.
 
+He realizado interpretaciones demográficas a partir del país, el género y los rangos de edad de los atletas.
+
+También análisis temporal entre los años 2021 y 2023, por ejemplo comparando la evolución del número de atletas en distintos países para estos años.
+
+Y por último, la parte que a mi parecer es la más interesante de este proyecto, he relacionado determinadas variables con el rendimiento de los atletas filtrando por competiciones y puestos en el ranking. 
+Detectando cuáles han sido los mejores atletas en determinados años y estableciendo relaciones entre sus resultados y sus cualidades físicas.
