@@ -51,7 +51,7 @@ Tenemos datos individuales(con elevada granularidad) de tipo **float** e **integ
 
 Como vemos en el notebook este dataset no cuenta con una gran cantidad de valores nulos, lo cuál va a facilitar nuestro análisis y va a hacer que los resultados que obtengamos sean consistentes y representen de una buena forma la realidad.
 
-No cuenta con valores duplicados lo que garantiza que cada atleta es único y no existen repeticiones que puedan distorsionar el análisis.
+Este dataset presenta algunos valores duplicados, dónde más me interesa tratatarlos es en el "competitor_id", para que así cada atleta cuente con un identificador distinto y se diferencie del resto. AL tener registros de varias competiciones para un mismo atleta dentro del mismo año hay que tener cuidado con eliminar estos dupliacados, ya que, nos están aportando información importante.
 
 En cuanto a los valores únicos, he revisado que este dataset cuente con valores únicos para las variable género y año.
 Se comprueba que para la variable género sólo existen "Male" y "Female" y para la variable temporal sólo los años 2021, 2022 y 2023, años en los que está basado este dataset. 
@@ -61,5 +61,12 @@ He englobado en una variable los valores atípicos que presenta "overallRank", e
 En la fase de exploración se ha obtenido una visión general sobre la estructura, el contenido y la calidad de los datos disponibles. Se han revisado las variables presentes, su tipología y distribución. Además, se ha explorado la presencia de valores nulos y posibles outliers, así como la consistencia y coherencia entre columnas.
 
 ## 2. Limpieza y transformación de los datos
+En esta fase del análisis, he renombrado algunos nombres de las variables para que se entienda mejor qué están representando, he eliminado algunas columnas de forma justificada, he tratado los valores nulos y valores atípicos.
+Por ejemplo los valores negativos de la variable "score" los he transformado en valores nulos para que así no distorsionen el análisis.
 
+No he eliminado los valores duplicados, ya que, no existe ninguna fila que sea igual que otra completamente, por tanto cada dato me está aportando información única en al menos una variable.
+
+Por último he exportado mi nuevo dataset limpio y he creado un segundo notebook para pasar con la parte de agrupación y visualización de mi análisis ya partiendo de este nuevo dataset.
+
+## 3. Agrupación y visualización de los datos
 
