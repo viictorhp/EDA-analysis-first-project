@@ -76,4 +76,13 @@ He realizado interpretaciones demográficas a partir del país, el género y los
 También análisis temporal entre los años 2021 y 2023, por ejemplo comparando la evolución del número de atletas en distintos países para estos años.
 
 Y por último, la parte que a mi parecer es la más interesante de este proyecto, he relacionado determinadas variables con el rendimiento de los atletas filtrando por competiciones y puestos en el ranking. 
-Detectando cuáles han sido los mejores atletas en determinados años y estableciendo relaciones entre sus resultados y sus cualidades físicas.
+Detectando cuáles han sido los mejores atletas en determinados años y estableciendo relaciones entre sus resultados, sus cualidades físicas y su género.
+
+## 4. Conclusiones y hallazgos encontrados
+El dataset final contiene casi 400.000 registros de atletas de CrossFit con alta granularidad: cada fila describe a un atleta concreto en una competición y año determinados, incluyendo información demográfica (edad, género, país), física (altura, peso) y de rendimiento (ranking, puntuación). Tras la limpieza se eliminaron columnas redundantes (nombres duplicados, identificadores poco útiles), se corrigieron tipos de datos y se comprobó que no existían filas duplicadas ni incoherencias graves entre columnas.
+
+El análisis exploratorio mostró que la participación se concentra en unos pocos países, destacando Estados Unidos con mucha diferencia sobre el resto, y que el volumen de atletas por año se mantiene alto y relativamente estable en el periodo 2021–2023. También se observó que la participación masculina es mayor que la femenina, aunque ambos géneros están presentes en todas las competiciones y años.
+
+Entre los mejores atletas las alturas y pesos se concentran en rangos relativamente estrechos moderadamente altos pero sin extremos, con diferencias esperadas entre hombres y mujeres. Sin embargo, los scatterplots de altura–ranking y peso–ranking no muestran una relación clara y lineal, indicando que el rendimiento no depende solo de estas variables físicas. Los mejores atletas se agrupan principalmente entre los 24 y 32 años. 
+
+En conjunto, el estudio ha permitido: caracterizar el dataset y su calidad, entender cómo se distribuyen los atletas por años, países y género, y explorar de forma visual la relación entre características físicas y rendimiento.
