@@ -53,7 +53,7 @@ def gender_table (df):
 
 # 5 - Gráfico frecuencia por género
 
-def graph_gender_table (df):
+def graph_gender (df):
     df["gender"].value_counts().plot(kind="bar", color="skyblue")
     plt.xlabel("Gender")
     plt.ylabel("Number of athletes")
@@ -71,7 +71,7 @@ def age_table (df):
 
 # 7 - Gráfico frecuencia por rangos de edad
 
-def graph_age_table (df):
+def graph_age (df):
     df["age"].hist(bins=20, color="lightgreen")
     plt.xlabel("Age")
     plt.ylabel("Number of athletes")
@@ -106,9 +106,7 @@ def top5_table (df):
 
 def top5_graph (df):
     country_table = df.groupby(["country", "year"]).size().reset_index(name = "athlete_count")
-
     top5_country = country_table.groupby("country")["athlete_count"].sum().sort_values(ascending=False).head(5).index
-
     country_table_top5 = country_table[country_table["country"].isin(top5_country)]
 
     for country in top5_country:

@@ -47,12 +47,12 @@ Mediante la función "describe" obtenemos información muy valiosa sobre la dist
 #### Tipos de datos
 Tenemos datos individuales(con elevada granularidad) de tipo **float** e **integer** (métricas numéricas), como pueden ser la edad, el peso, la altura... y algunos otros datos de tipo **object** (variables de texto), como la región, el nombre, etc.
 
-Como vemos en el notebook este dataset no cuenta con una gran cantidad de valores nulos, lo cuál va a facilitar nuestro análisis y va a hacer que los resultados que obtengamos sean consistentes y representen de una buena forma la realidad.
+Como podemos comprobar en el estudio este dataset no cuenta con una gran cantidad de valores nulos, lo cuál va a facilitar nuestro análisis y va a hacer que los resultados que obtengamos sean consistentes y representen de una buena forma la realidad.
 
 Este dataset presenta algunos valores duplicados, dónde más me interesa tratatarlos es en el "competitor_id", para que así cada atleta cuente con un identificador distinto y se diferencie del resto. 
 Al tener registros de varias competiciones para un mismo atleta dentro del mismo año hay que tener cuidado con eliminar directamente estos dupliacados, ya que, nos están aportando información importante.
 
-En cuanto a los valores únicos, he revisado que este dataset cuente con valores únicos para las variable género y año.
+En cuanto a los valores únicos, he revisado que este dataset cuente con valores únicos para las variables género y año.
 Se comprueba que para la variable género sólo existen "Male" y "Female" y para la variable temporal sólo los años 2021, 2022 y 2023, años en los que está basado este dataset. 
 
 Para finalizar con la visualización de los datos, he englobado en una variable los valores atípicos que presenta "overallRank", estos valores indican un puesto en el ranking negativo.
